@@ -1,0 +1,103 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Administración de dominios</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <div class="header">
+        <div class="wrap">
+            <div class="logo"><a href="index.html"><img src="images/LOGO.jpg" alt="logo" width="120" /><p></p>ALM ADMINISTRATION OF DOMAINS</a></div>
+            <div class="phone">
+                <ul>
+                    <li><span class="icon mob"></span>Contact : +34 658245964</li>
+                   <li><span class="icon mail"></span>Email : <a href="mailto:@example.com">almadministrationdomains@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="nav">
+                <ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="apartadoA.html">A</a></li>
+                    <li><a href="ApartadoB.html">B</a></li>
+                    <li><a href="apartadoC.html">C</a></li>
+                    <li><a href="apartadoD.html">D</a></li>
+                    <li><a href="apartadoE.html">E</a></li>
+                    <li><a href="apartadoF.html">F</a></li>
+					<li><a href="apartadoG.html">G</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+    <div class="content">
+            
+            <div class="b-box">
+            <h1>Apartado A</h1>
+			
+			<p><h2 id="h2">INCORPORACIÓN EQUIPOS AL DOMINIO:</h2></p>
+			<p></p>
+			<p id="bold"><b>INCORPORAR EQUIPOS AL DOMINIO:</b></p>
+			</br>
+			<li id="guiones">Para poder utilizar las diferentes herramientas que ofrece un dominio, debemos establecerle los equipos desde los que se van a conectar los clientes, es decir, añadirselos al dominio.</li>
+			
+			<li id="guiones">Para poder hacer funcionar esto, hay tres pasos que son:</li>
+            <li id="guiones">Establecer las conexiones de red oportunas para que la red vaya con su protocolo IPV4 Y DNS.</li>
+            <li id="guiones">Debemos ajustar el nombre del equipo</li>
+            <li id="guiones">Una vez ajustado debemos unirlo al dominio.</li>
+			<p></p>
+            <p id="bold"><b>CONFIGURANDO LA RED EN EL CLIENTE:</b></p>
+			<li id="guiones">En este caso le asignaremos una dirección ip por el protocolo IPV4 fija y también le asignaremos un servidor DNS que apunte a nuestra dirección ip de nuestro controlador del dominio.</li>
+            <li id="guiones">Primero configuraremos la dirección ip del servidor para ello deberemos irnos a "PANEL DE CONTROL", después daremos click en "REDES E INTERNET", a continuación en "CENTRO DE REDES Y RECURSOS COMPARTIDOS" y dentro de ahí "CAMBIAR OPCIONES DEL ADAPTADOR" nos dirigiremos a "ETHERNET" y haciendo click en el botón derecho le daremos a "PROPIEDADES" seguidamente a "PROTOCOLO DE INTERNET VERSION 4" pulsamos otra vez en "PROPIEDADES" y seguidamente introducimos los valores de dirección IP... y su DNS.</li>
+			<img src="images/A/paso1estableciendodirecci%C3%B3nip.JPG" alt="DIRECCIÓN IP SERVIDOR" width="600" />
+			<p></p>
+			</br>
+            <li id="guiones">En el cliente lo configuraremos igual qué el servidor, lo único que varían son las direcciones IP y DNS.</li>
+            <img src="images/A/PASO1ESTABLECIENDODIRECCIONIPENELCLIENTE.JPG" alt="DIRECCIÓN IP CLIENTE" width="600" />
+			<p></p>
+			</br>
+			<li id="guiones">Para comprobar que se ha realizado correctamente podemos hacer un ping a nuestro servidor.</li>
+			<p></p>
+			</br>
+			<li id="guiones">Si ingresamos el nombre del servidor en vez de la dirección ip correspondiente, veremos que nuestro equipo cliente se encuentra dentro de la red del servidor por lo que la configuración DNS fue correcta.</li>
+			<img src="images/A/PASOHACEPING.JPG"
+                 alt="PASO HACE PING" width="600" />
+			<p></p>
+			</br>
+            <p id="bold"><b>CAMBIANDO EL NOMBRE DE EQUIPO Y UNIÉNDOLO AL DOMINIO:</b></p>
+			<li id="guiones">En el cliente debemos poner un nombre de equipo tal que coincida con un nombre de equipo asignado en el dominio, al indicarle el nombre del dominio el sistema efectuará las operaciones para poner en marcha el vínculo.</li>
+			</br>
+			<li id="guiones">Para empezar haremos click en el botón derecho de nuestro raton sobre el botón de inicio, nos saldrán varias opciones y seleccionaremos "SISTEMA", en dicha ventana nos saldrán de nuevo varias opciones y congeremos la de "CAMBIAR CONFIGURACIÓN" y dentro de esa ventana cogeremos la opción de "CAMBIAR".</li>
+            <li id="guiones">Donde nos indica "NOMBRE DE EQUIPO" en ese campo debemos escribir el nombre de la cuenta del dominio, y en la casilla de "MIEMBRO DEL" seleccionaremos la opción de "DOMINIO" y debajo le indicaremos escribiéndolo el nombre del dominio al que queremos unir el equipo cliente.</li>
+            <img src="images/A/PASO1CAMBIANDONOMBREALEQUIPO.JPG" alt="PASO 1 CAMBIANDO NOMBRE AL EQUIPO" width="600" />
+			<p></p>
+			</br>
+			<li id="guiones">Nuestro sistema utilizado cómo se está viendo es "WINDOWS 10" por lo que Windows busca en la red el dominio qué le hemos especificado y si lo encuentra tendremos que escribir "NOMBRE DE USUARIO" y "CONTRASEÑA" qué pertenezcan al dominio, y eso si debe tener, debe tener los privilegios para poder unir el equipo al cliente.</li>
+            <li id="guiones">Para finalizar reiniciaremos el sistema operativo tras haber guardado todos los datos qué hemos establecido y también cuando hayamos cerrado todos los programas que hayamos abierto con anterioridad, entonces una vez hecho ese procedimiento, reiniciaremos el sistema operativo.</li>
+			
+             
+        </div>
+    </div>
+</div>
+    
+    <div class="footer">
+        <div class="wrap">
+            <div class="f-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+					<li><a href="apartadoA.html">A</a></li>
+                    <li><a href="ApartadoB.html">B</a></li>
+                    <li><a href="apartadoC.html">C</a></li>
+                    <li><a href="apartadoD.html">D</a></li>
+                    <li><a href="apartadoE.html">E</a></li>
+                    <li><a href="apartadoF.html">F</a></li>
+					<li><a href="apartadoG.html">G</a></li>
+               
+                </ul>
+                 <div class="copy">© 2018 ALM. All rights reserved. Designed by <a href="http://w3layouts.com" style="color:#A68775"></a> <a href="http://w3layouts.com" style="color:#A68775">ALM</a></div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
